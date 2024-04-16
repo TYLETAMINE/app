@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TheHeader />
+    <MainFirstModule />
+    <MainSecondModule />
+    <MainThirdModule />
+    <MainQuarterModule />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="js">
+import TheHeader from "./components/TheHeader";
+import MainFirstModule from "./components/MainFirstModule";
+import MainSecondModule from "./components/MainSecondModule";
+import MainThirdModule from "./components/MainThirdModule"
+import MainQuarterModule from "./components/MainQuarterModule"
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        TheHeader,
+        MainFirstModule,
+        MainSecondModule,
+        MainThirdModule,
+        MainQuarterModule
+    },
+
+    data() {
+        return {
+
+        }
+    }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style type="scss">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 </style>
