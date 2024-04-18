@@ -4,14 +4,20 @@
     <MainSecondModule />
     <MainThirdModule />
     <MainQuarterModule />
+    <MainFifthModule />
+    <MainSixthModule />
+    <MainSeventhModule />
 </template>
 
 <script lang="js">
 import TheHeader from "./components/TheHeader";
 import MainFirstModule from "./components/MainFirstModule";
 import MainSecondModule from "./components/MainSecondModule";
-import MainThirdModule from "./components/MainThirdModule"
-import MainQuarterModule from "./components/MainQuarterModule"
+import MainThirdModule from "./components/MainThirdModule";
+import MainQuarterModule from "./components/MainQuarterModule";
+import MainFifthModule from "./components/MainFifthModule";
+import MainSixthModule from "./components/MainSixthModule";
+import MainSeventhModule from "./components/MainSeventhModule";
 
 export default {
     name: 'App',
@@ -20,7 +26,10 @@ export default {
         MainFirstModule,
         MainSecondModule,
         MainThirdModule,
-        MainQuarterModule
+        MainQuarterModule,
+        MainFifthModule,
+        MainSixthModule,
+        MainSeventhModule
     },
 
     data() {

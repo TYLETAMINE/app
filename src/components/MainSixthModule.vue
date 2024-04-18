@@ -3,26 +3,26 @@
         <div class="left-info-block">
             <div class="images-layout"
             style="margin-left: 17px;">
-                <img src="../assets/images/girl.jpg" class="img img-left-block">
+                <img src="../assets/images/child-on-bike.jpg" class="img img-left-block">
             </div>
 
             <div class="title__left-block">
-                <p class="title">Пальто из исскуственного меха</p>
+                <p class="title">Пуфер парка</p>
                 <div class="sub-title__title">
-                    <p class="sub-title">79.95 EUR</p>
+                    <p class="sub-title">35.95 EUR</p>
                 </div>
             </div>
         </div>
 
         <div class="right-info-block">
             <div class="images-layout">
-                <img src="../assets/images/girl-2.jpg" class="img img-left-block">
+                <img src="../assets/images/child-sit.jpg" class="img img-left-block">
             </div>
 
             <div class="title__right-block">
-                <p class="title">Пуховик с воротником</p>
+                <p class="title">Толстовка с логотипом с пийстами</p>
                 <div class="sub-title__title">
-                    <p class="sub-title">89.95 EUR</p>
+                    <p class="sub-title">17.95 EUR</p>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
             background-size: cover !important;
             background-position: center center !important;
             background-repeat: no-repeat !important;
-            background: url(../assets/images/girl.jpg);
+            background: url(../assets/images/child-on-bike.jpg);
 
             .img {
                 object-fit: cover;
@@ -84,13 +84,15 @@
     }
 
     .right-info-block {
+        width: 515px;
         .images-layout {
             width: 449px;
             height: 302px;
-            background: url(../assets/images/look10.jpg);
+            background: url(../assets/images/child-sit.jpg);
 
             .img {
                 width: 302px;
+                object-position: -50px center;
             }
         }
     }

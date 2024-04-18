@@ -32,6 +32,7 @@
     padding-top: 30px;
     height: 100vh;
     display: grid;
+    grid-gap: 50px;
     grid-template-columns: repeat(2, 560px);
     justify-content: center;
     font-family: 'Open Sans';
@@ -81,20 +82,19 @@
         /* justify-content: start; */
 
         .images {
-            width: 100%;
-            height: 334px;
+            width: 80%;
+            height: 100%;
             display: grid;
             align-items: center;
             justify-self: center;
             background: url(../assets/images/slidemd.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 334px 337px;
             background-position: center center;
 
             .man-on-right {
                 width: 339px;
                 height: 479px;
-                align-self: center;
                 object-fit: cover;
                 display: grid;
             }
