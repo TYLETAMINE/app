@@ -1,14 +1,14 @@
 <template>
-    <div class="info-title-image__first-module">
-        <div class="left-info-block">
-            <div class="image-layout">
-                <div class="images-left-block">
+    <div class="first-module__info">
+        <div class="info__left-block">
+            <div class="left-block__images">
+                <div class="images">
                     <img src="../assets/images/center-title-image.jpg" class="first-img">
                     <img src="../assets/images/center-title-image.jpg" class="second-img">
                 </div>
             </div>
 
-            <div class="title__left-block">
+            <div class="left-block__title">
                 <p class="l-text">Пальто с капюшоном с высоким воротником и длинными рукавами с
                     эластичными манжетами. Передние прорезные карманы на кнопках,
                     накладные карманы, открывающиеся сбоку, боковые молнии по краю,
@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="right-info-block">
+        <div class="info__right-block">
             <div class="main-title__right-block">
                 <h2 class="r-custom">ПОСЛЕДНИЕ ТЕНДЕНЦИИ ИЗ НОВОЙ КОЛЛЕКЦИИ ZARA</h2>
 
@@ -43,21 +43,21 @@
 <style type="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.info-title-image__first-module {
+.first-module__info {
     display: grid;
     margin-top: 20px;
     justify-content: center;
     grid-template-columns: repeat(2, 580px);
 
-    .left-info-block {
+    .info__left-block {
         display: grid;
         align-items: center;
         justify-content: center;
 
-        .image-layout {
+        .left-block__images {
             margin: 0 72px 0 72px;
 
-            .images-left-block {
+            .images {
                 display: grid;
                 align-items: center;
                 justify-content: center;
@@ -75,12 +75,16 @@
                     height: 479px;
                     object-fit: cover;
                     object-position: 100% center;
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
                 }
             }
         }
 
-        .title__left-block {
-            width: 100%;
+        .left-block__title {
             width: 581px;
             display: grid;
             padding: 30px;
@@ -94,7 +98,7 @@
         }
     }
 
-    .right-info-block {
+    .info__right-block {
         height: 700px;
         margin-top: 30px;
 
@@ -129,6 +133,11 @@
                     height: 258px;
                     object-fit: cover;
                     border: 16px solid #eed490;
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
                 }
 
                 .second-img {
@@ -142,6 +151,20 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 }
 </style>

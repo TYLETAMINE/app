@@ -31,12 +31,6 @@ export default {
         MainSixthModule,
         MainSeventhModule
     },
-
-    data() {
-        return {
-
-        }
-    }
 }
 </script>
 

@@ -16,15 +16,16 @@
     background: url(../assets/images/headerImage.jpg);
 
     width: 100%;
-    height: 107.8vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 40%;
 
     .header__title {
         width: 100%;
         height: 100%;
         display: grid;
+        position: relative;
         align-items: center;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.2);
@@ -56,6 +57,32 @@
 
                 &:hover {
                     transform: scale(1.08);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .header {
+        width: 100vw;
+        height: 25vh;
+
+        .header__title {
+            height: 100%;
+
+            .title__zara {
+                width: 90vw;
+                height: 100%;
+
+                .zara__image {
+                    display: none;
                 }
             }
         }

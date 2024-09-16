@@ -1,8 +1,7 @@
 <template>
     <div class="info-title-image__third-module">
         <div class="left-info-block">
-            <div class="images-layout"
-            style="margin-left: 17px;">
+            <div class="images-layout" style="margin-left: 17px;">
                 <img src="../assets/images/child-on-bike.jpg" class="img img-left-block">
             </div>
 
@@ -58,6 +57,11 @@
                 object-fit: cover;
                 width: 340px;
                 height: 460px;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
         }
 
@@ -85,6 +89,7 @@
 
     .right-info-block {
         width: 515px;
+
         .images-layout {
             width: 449px;
             height: 302px;

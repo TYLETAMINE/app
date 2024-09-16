@@ -1,7 +1,7 @@
 <template>
     <div class="slidebar__main">
         <swiper :modules="modules" navigation :pagination="{ clickable: true }" :scrollbar="{ draggable: true }"
-            :autoplay="{ delay: 3000 }" loop="{ true }" speed="700" @swiper="onSwiper" class="swiper">
+            :autoplay="{ delay: 3000 }" :loop="true" speed:="700" class="swiper">
             <swiper-slide class="swiper-slide">
                 <div class="first-img__slidebar">
                     <div class="canvas">
@@ -36,11 +36,7 @@ export default {
         SwiperSlide,
     },
     setup() {
-        const onSwiper = (swiper) => {
-            console.log(swiper);
-        };
         return {
-            onSwiper,
             modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
         };
     },

@@ -72,6 +72,11 @@
                 height: 517px;
                 padding-bottom: 30px;
                 object-fit: cover;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
         }
     }
@@ -97,6 +102,11 @@
                 height: 479px;
                 object-fit: cover;
                 display: grid;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
         }
 
